@@ -17,4 +17,15 @@ if(checkArmstrong(number)):
     print(f"Yes,The number {number} is an Armstrong Number") 
 else:
     print(f"No,The number {number} is not an Armstrong Number") 
-    
+
+# Better and Optimized solution for this is usinf str
+number = 153
+numberToString = str(number)
+sumOfCube = 0
+for digit in numberToString:
+    digitToInteger = int(digit)
+    sumOfCube = digitToInteger*digitToInteger*digitToInteger+sumOfCube
+if sumOfCube == number:
+    print(f"Yes,The number {number} is an Armstrong Number")
+else:
+    print(f"No,The number {number} is not an Armstrong Number") 
