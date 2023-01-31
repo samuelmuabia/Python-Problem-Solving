@@ -8,19 +8,26 @@ def numberCounter(arrayOfNumbers):
             count[number]=1
     return count
 def sumOfTwo(arrayOfNumbers,targetSum):
-    listOfNumberCount= numberCounter(arrayOfNumbers)
-    for num,items in listOfNumberCount.items():
-        firstNumber = num
-        secondNumber = targetSum - firstNumber
-        try:
-            listOfNumberCount[secondNumber]
-            return [firstNumber,secondNumber]
-        except:
-            pass
-        print(num,"->",items)
+    if len(arrayOfNumbers)>2:
+        listOfNumberCount= numberCounter(arrayOfNumbers)
+        for num,items in listOfNumberCount.items():
+            firstNumber = num
+            secondNumber = targetSum - firstNumber
+            try:
+                listOfNumberCount[secondNumber]
+                return [firstNumber,secondNumber]
+            except:
+                pass
+            print(num,"->",items)
+    elif len(arrayOfNumbers)==1:
+        if arrayOfNumbers[0]==targetSum:
+            return [targetSum]
+    else:
+        if targetSum == arrayOfNumbers[0]+arrayOfNumbers[1]:
+            return [arrayOfNumbers[0],arrayOfNumbers[1]]
 
 
 
 
 arrayOfNumbers=[1,-2,4,-5,6]
-print(sumOfTwo(arrayOfNumbers,-7))
+print(f"The target sum can be obtain from summation of this two numbers : {sumOfTwo(arrayOfNumbers,-7)}")
