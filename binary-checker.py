@@ -36,4 +36,5 @@ if checkBinary(number):
     print(f"{number} is a binary number.")
 else :
     print(f"{number} is not a binary number.")            
-        
+
+# This implementation has a time complexity of O(n), where n is the number of digits in the input number, which is faster than the original code. Additionally, this implementation is more readable, as it directly checks if each digit is a 0 or 1 using string operations.

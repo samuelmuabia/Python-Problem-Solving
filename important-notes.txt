@@ -1,0 +1,5 @@
+In general, O(n) is considered better than O(log n) when the input size is small. This is because the constant factor for O(n) algorithms is usually smaller than the constant factor for O(log n) algorithms.
+
+For large input sizes, O(log n) algorithms tend to perform better than O(n) algorithms because logarithmic growth is much slower than linear growth. As the input size increases, the difference between O(n) and O(log n) algorithms becomes more pronounced.
+
+In other words, the choice between O(n) and O(log n) depends on the specific problem you're trying to solve and the size of the inputs you expect to handle. For small inputs, O(n) may be sufficient and faster, while for large inputs, O(log n) may be necessary to avoid excessive runtimes

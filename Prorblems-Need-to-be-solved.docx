@@ -1,0 +1,111 @@
+1. You are a park ranger and you want to plan the most efficient route for your daily patrol. Write a program that calculates the shortest route that visits every park in the area exactly once and returns to the starting park.
+
+2. You are a chef and you want to plan a weekly menu for your restaurant. Write a program that generates a weekly menu based on a list of ingredients, their availability, and their shelf life.
+
+3. You are an event planner and you want to find the best schedule for a series of events. Write a program that takes a list of events, their duration, and their dependencies, and generates the optimal schedule that minimizes conflicts and maximizes attendance.
+
+4. You are a teacher and you want to create a seating chart for your classroom. Write a program that generates a seating chart based on student preferences and seating capacity.
+
+5. You are a librarian and you want to manage the books in your library. Write a program that keeps track of the books, their authors, their availability, and the borrowing history of each book.
+
+
+
+1. Park Ranger Patrol Route Problem:
+You are a park ranger and you want to plan the most efficient route for your daily patrol. Your patrol covers several parks in a park system. You want to visit each park once and return to your starting park.
+
+Given a list of parks and the distances between each pair of parks, write a program to calculate the shortest route that visits every park exactly once and returns to the starting park.
+
+Input:
+
+A list of parks [(A, B, C, ...)]
+A matrix of distances between each pair of parks [(AB, AC, AD, ...), (BA, BC, BD, ...), ...]
+Output:
+
+The shortest route visiting each park once and returning to the starting park.
+Example:
+Input: Parks = [A, B, C, D]
+Distances = [[0, 10, 20, 30], [10, 0, 15, 25], [20, 15, 0, 20], [30, 25, 20, 0]]
+Output: A -> B -> C -> D -> A (total distance = 90)
+
+2. Weekly Menu Planning Problem:
+You are a chef and you want to plan a weekly menu for your restaurant. You have a list of ingredients and their availability and shelf life. You want to create a weekly menu that uses the ingredients before they go bad, and maximizes the use of ingredients.
+
+Given a list of ingredients, their availability, and their shelf life, write a program to generate a weekly menu for your restaurant.
+
+Input:
+
+A list of ingredients [(Ingredient 1, Ingredient 2, ...)]
+A list of the availability of each ingredient [(Ingredient 1 Availability, Ingredient 2 Availability, ...)]
+A list of the shelf life of each ingredient [(Ingredient 1 Shelf Life, Ingredient 2 Shelf Life, ...)]
+Output:
+
+A weekly menu using the ingredients and maximizing their use.
+Example:
+Input: Ingredients = [Tomatoes, Lettuce, Carrots, Chicken]
+Availability = [100, 50, 75, 200]
+Shelf Life = [5, 7, 10, 3]
+Output: Monday: Salad with Tomatoes, Lettuce, and Carrots
+Tuesday: Chicken stir-fry with Tomatoes, Carrots
+Wednesday: Chicken and Carrot wrap with Lettuce
+Thursday: Tomato soup with Chicken
+Friday: Carrot soup with Lettuce
+Saturday: Chicken and Vegetable skewers with Tomatoes and Carrots
+
+Note: This problem can have multiple solutions depending on the constraints and priorities set by the chef.
+
+
+
+3. Package Delivery Problem:
+You are a delivery person and you have several packages to deliver to different locations. You want to plan the most efficient route to deliver all the packages.
+
+Given a list of delivery locations, write a program to calculate the shortest route to deliver all the packages.
+
+Input:
+
+A list of delivery locations [(Location 1, Location 2, ...)]
+A matrix of distances between each pair of locations [(Location 1 to Location 2, Location 1 to Location 3, ...), (Location 2 to Location 1, Location 2 to Location 3, ...), ...]
+Output:
+
+The shortest route to deliver all the packages.
+Example:
+Input: Locations = [A, B, C, D, E]
+Distances = [[0, 10, 20, 30, 40], [10, 0, 15, 25, 35], [20, 15, 0, 20, 30], [30, 25, 20, 0, 10], [40, 35, 30, 10, 0]]
+Output: A -> C -> B -> D -> E -> A (total distance = 120)
+
+
+4. Resource Allocation Problem:
+A company has a set of projects and a set of resources. Each project requires a certain amount of each resource, and each resource has a limited availability. The goal is to allocate resources to projects in a way that maximizes the total amount of work done.
+
+Given the resources and projects available, write a program to determine the optimal allocation of resources to projects.
+
+Input:
+
+A list of projects [(Project 1, Resource 1 needed, Resource 2 needed, ...), (Project 2, Resource 1 needed, Resource 2 needed, ...), ...]
+A list of resources [(Resource 1, Total available), (Resource 2, Total available), ...]
+Output:
+
+The optimal allocation of resources to projects.
+Example:
+Input: Projects = [ (P1, 10, 20, 30), (P2, 20, 15, 25), (P3, 5, 10, 15) ]
+Resources = [ (R1, 40), (R2, 50), (R3, 60) ]
+Output: P1 receives 30 units of R1, 20 units of R2, and 30 units of R3.
+P2 receives 10 units of R1, 15 units of R2, and 25 units of R3.
+P3 receives 0 units of R1, 20 units of R2, and 15 units of R3.
+
+
+5. Travel Planning Problem:
+You are planning a trip and want to visit several cities in the most efficient order. You want to minimize the total travel time while ensuring that you visit all the cities.
+
+Given a list of cities and the travel time between each pair of cities, write a program to calculate the most efficient route to visit all the cities.
+
+Input:
+
+A list of cities [(City 1, City 2, ...)]
+A matrix of travel times between each pair of cities [(City 1 to City 2, City 1 to City 3, ...), (City 2 to City 1, City 2 to City 3, ...), ...]
+Output:
+
+The most efficient route to visit all the cities.
+Example:
+Input: Cities = [A, B, C, D, E]
+Travel times = [[0, 10, 20, 30, 40], [10, 0, 15, 25, 35], [20, 15, 0, 20, 30], [30, 25, 20, 0, 10], [40, 35, 30, 10, 0]]
+Output: A -> C -> B -> D -> E (total travel time = 110)
